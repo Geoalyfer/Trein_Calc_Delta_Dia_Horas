@@ -1,0 +1,35 @@
+#Definir as variáveis de:
+data_ini = datetime.date(2022, 1, 1)
+data_fim = datetime.date(2022, 1, 15)
+
+diferenca_dias = data_fim - data_ini
+
+type(diferenca_dias)
+datetime.timedelta
+
+type(diferenca_dias.days)
+int
+
+print(diferenca_dias)
+14 days, 0:00:00
+
+soma_1_dia =  datetime.timedelta(days=1)
+datetime.date.today() + datetime.timedelta(days=1)
+datetime.date(2022, 5, 2)
+
+# adicionando 3 horas a um datetime
+datetime.datetime(2022, 6, 1, 19, 15) + datetime.timedelta(hours=3)
+datetime.datetime(2022, 6, 1, 22, 15)
+
+# subtraindo 3 dias e 2 horas a um datetime
+datetime.datetime(2022, 6, 1, 19, 15) + datetime.timedelta(days=-3, hours=-2)
+datetime.datetime(2022, 5, 29, 17, 15)
+
+data_ini = datetime.datetime(2022, 6, 29, 21, 50, 10)
+data_fim = datetime.datetime(2022, 6, 30, 19, 30, 5)
+diferenca = data_fim - data_ini
+type(diferenca)
+datetime.timedelta
+diferenca.days
+0
+
